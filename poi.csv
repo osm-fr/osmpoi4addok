@@ -2,7 +2,6 @@ key1,value1,key2,label,rank,rank_point,rank_line,rank_polygon
 aerodrome,international,,Aéroport international,10,,,
 amenity,ferry_terminal,, Terminal de ferry,10,,,
 aerodrome,airport,,Aéroport,9,,,
-iata,,,Aéroport,9,,,
 aeroway,aerodrome,, Aérodrome,8,,,
 amenity,hospital,, Hôpital,8,,,
 amenity,university,, Université,8,,,
