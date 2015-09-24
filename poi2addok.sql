@@ -5,7 +5,7 @@ SELECT
   lon,
   coalesce('aerialway='||aerialway, 'aerodrome='||aerodrome, 'aeroway='||aeroway, 'amenity='||amenity, 'boundary='||boundary, 'bridge='||bridge, 'craft='||craft, 'emergency='||emergency, 'heritage='||heritage, 'highway='||highway, 'historic='||historic, 'junction='||junction, 'landuse='||landuse, 'leisure='||leisure, 'man_made='||man_made, 'military='||military, 'mountain_pass='||mountain_pass, 'natural='||"natural", 'office='||office, 'place='||place, 'railway='||railway, 'shop='||shop, 'tourism='||tourism, 'tunnel='||tunnel, 'waterway='||waterway) AS tag,
   name,
-  insee AS city_code,
+  insee AS citycode,
   c.nom AS city
 FROM
   poi
@@ -30,7 +30,7 @@ FROM (
     lat,
     lon,
     city,
-    city_code,
+    citycode,
     rank AS importance
   FROM
     poi_tag
