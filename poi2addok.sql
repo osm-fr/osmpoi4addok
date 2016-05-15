@@ -26,7 +26,7 @@ FROM (
     id,
     'poi' AS type,
     value1 AS poi,
-    (SELECT array_agg(trim(v) || coalesce(' ' || name, '')) FROM unnest(regexp_split_to_array(label, ' / ')) AS t(v)) AS name,
+    (SELECT array_agg(case when name like '%'||trim(v)||'%' then name else trim(v) || coalesce(' ' || name, '') end) FROM unnest(regexp_split_to_array(label, ' / ')) AS t(v)) AS name,
     lat,
     lon,
     city,
