@@ -1,6 +1,9 @@
-URL=http://osm13.openstreetmap.fr/~cquest/openfla/export/communes-20150101-5m-shp.zip
-[ -f communes-20150101-5m-shp.zip ] || wget $URL && unzip communes-20150101-5m-shp.zip
-shp2pgsql -d communes-20150101-5m.shp > communes.sql
-rm communes-20150101-5m.* LICENCE.txt communes-descriptif.txt
-psql < communes.sql
-psql -c 'CREATE INDEX idx_com_geom ON "communes-20150101-5m" USING gist(geom);'
+COMMUNES=communes-20160119
+URL=http://osm13.openstreetmap.fr/~cquest/openfla/export/$COMMUNES-shp.zip
+[ -f $COMMUNES-shp.zip ] || wget $URL && unzip $COMMUNES-shp.zip
+psql -c "DROP TABLE IF EXISTS com;"
+shp2pgsql -d $COMMUNES.shp | psql -q
+psql -c "ALTER TABLE \"$COMMUNES\" RENAME TO com;"
+psql -c "CREATE INDEX idx_com_geom ON com USING gist(geom);"
+rm $COMMUNES.* LICENCE.txt communes-descriptif.txt
+
