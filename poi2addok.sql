@@ -9,7 +9,7 @@ SELECT
   c.nom AS city
 FROM
   poi
-  JOIN "communes-20150101-5m" AS c ON
+  JOIN com AS c ON
     ST_Intersects(poi.geom, c.geom)
 ;
 
