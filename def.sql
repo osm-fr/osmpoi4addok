@@ -1,4 +1,4 @@
-DROP TABLE def;
+DROP TABLE IF EXISTS def;
 CREATE TABLE def(
   key1 VARCHAR,
   value1 VARCHAR,
