@@ -1,4 +1,4 @@
-DROP TABLE poi;
+DROP TABLE IF EXISTS poi;
 CREATE TABLE poi(
   id VARCHAR,
   lon DECIMAL,
