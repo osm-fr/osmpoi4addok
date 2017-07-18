@@ -31,7 +31,7 @@ FROM (
     lon,
     city,
     citycode,
-    rank AS importance
+    rank::numeric AS importance
   FROM
     poi_tag
     JOIN def ON
