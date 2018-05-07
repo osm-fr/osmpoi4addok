@@ -3,6 +3,7 @@ SELECT
   id::numeric,
   lat,
   lon,
+  bbox,
   coalesce('aerialway='||aerialway, 'aerodrome='||aerodrome, 'aeroway='||aeroway, 'amenity='||amenity, 'boundary='||boundary, 'bridge='||bridge, 'craft='||craft, 'emergency='||emergency, 'heritage='||heritage, 'highway='||highway, 'historic='||historic, 'junction='||junction, 'landuse='||landuse, 'leisure='||leisure, 'man_made='||man_made, 'military='||military, 'mountain_pass='||mountain_pass, 'natural='||"natural", 'office='||office, 'place='||place, 'railway='||railway, 'shop='||shop, 'tourism='||tourism, 'tunnel='||tunnel, 'waterway='||waterway) AS tag,
   name,
   insee AS citycode,
@@ -35,7 +36,8 @@ FROM (
     lon,
     city,
     citycode,
-    rank::numeric AS importance
+    context,
+    rank::numeric/10 + coalesce(log(0.00001+sqrt(st_area(st_expand(ST_LineFromText(regexp_replace(bbox, '(.*),(.*),(.*),(.*)','LINESTRING(\1 \2,\3 \4)')),0)::geography)))/100,0) AS importance
   FROM
     poi_tag
     JOIN def ON
