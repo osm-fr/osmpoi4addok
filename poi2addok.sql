@@ -7,11 +7,14 @@ SELECT
   coalesce('aerialway='||aerialway, 'aerodrome='||aerodrome, 'aeroway='||aeroway, 'amenity='||amenity, 'boundary='||boundary, 'bridge='||bridge, 'craft='||craft, 'emergency='||emergency, 'heritage='||heritage, 'highway='||highway, 'historic='||historic, 'junction='||junction, 'landuse='||landuse, 'leisure='||leisure, 'man_made='||man_made, 'military='||military, 'mountain_pass='||mountain_pass, 'natural='||"natural", 'office='||office, 'place='||place, 'railway='||railway, 'shop='||shop, 'tourism='||tourism, 'tunnel='||tunnel, 'waterway='||waterway) AS tag,
   name,
   insee AS citycode,
-  c.nom AS city
+  c.nom AS city,
+  format('%s, %s', nomdep, nomreg) as context
 FROM
   poi
   JOIN com AS c ON
     ST_Intersects(poi.geom, c.geom)
+  JOIN cog ON
+    depcom = c.insee
 ;
 
 CREATE INDEX idx_def_tag ON def((key1 || '=' || value1));
