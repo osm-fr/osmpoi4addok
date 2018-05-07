@@ -27,7 +27,7 @@ SELECT
   row_to_json(t)
 FROM (
   SELECT
-    format('http://osm.org/%s/%s',case when id<1000000000000000 then 'node' when id>2000000000000000 then 'relation' else 'way' end, id % 1000000000000000) as id,
+    format('https://osm.org/%s/%s',case when id<1000000000000000 then 'node' when id>2000000000000000 then 'relation' else 'way' end, id % 1000000000000000) as id,
     'poi' AS type,
     value1 AS poi,
     (SELECT array_agg(case
