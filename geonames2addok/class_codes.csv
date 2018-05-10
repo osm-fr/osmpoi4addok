@@ -1,0 +1,286 @@
+"class","code","count","label"
+"A","ADM1",13,"Région"
+"A","ADM1H",23,"Ancienne Région"
+"A","ADM2",96,"Département"
+"A","ADM3",330,"Arrondissement"
+"A","ADM4",35287,"Commune"
+"A","ADM4H",1270,"Ancienne commune"
+"A","ADM5",45,"Arrondissement municipal"
+"A","ADMD",5,
+"A","ADMDH",11,"Ancien arrondissement parisien"
+"A","PCLI",1,
+"H","AIRS",1,"Base hydravion"
+"H","ANCH",12,"Mouillage"
+"H","BAY",240,"Baie"
+"H","BGHT",6,"Anse"
+"H","BNK",12,
+"H","CHN",7,"Chenal"
+"H","CHNM",64,"Chenal"
+"H","CHNN",2,"Chenal"
+"H","CNL",235,"Canal"
+"H","CNLA",6,"Aqueduc"
+"H","CNLN",6,"Pont canal"
+"H","COVE",300,"Petite baie"
+"H","CRNT",6,"Raz"
+"H","DCK",32,"Bassin"
+"H","DTCHD",2,
+"H","ESTY",9,"Estuaire"
+"H","FISH",1,
+"H","FLLS",5,"Cascade"
+"H","FLTT",19,"Grève / Banc"
+"H","GLCR",83,"Glacier"
+"H","GULF",15,"Golfe"
+"H","HBR",118,"Port"
+"H","INLT",22,
+"H","LBED",3,"Polder"
+"H","LGN",88,"Lagon"
+"H","LGNS",1,"Lagon"
+"H","LK",495,"Lac"
+"H","LKS",16,"Lac"
+"H","LKX",4,"Lac"
+"H","MRSH",78,"Marais"
+"H","PND",176,"Étang"
+"H","PNDN",1,"Étang salé"
+"H","PNDS",2,"Étang"
+"H","POOL",1,"Fosse"
+"H","RDST",41,"Rade"
+"H","RF",247,"Récif"
+"H","RPDS",1,"Rapides"
+"H","RSV",29,"Réservoir"
+"H","RSVT",1,"Château d’eau"
+"H","SHOL",311,"Haut fond"
+"H","SPNG",9,"Source"
+"H","SPNT",2,"Source chaude"
+"H","STM",3194,"Cours d’eau"
+"H","STMA",11,"Bras de cours d’eau"
+"H","STMC",12,"Cours d’eau canalisé"
+"H","STMD",1,
+"H","STMI",1,"Cours d’eau intermittent"
+"H","STMM",14,"Embouchure"
+"H","STMX",2,"Cours d’eau"
+"H","STRT",3,"Passe"
+"H","WHRL",1,"Tourbillon"
+"L","AMUS",7,"Parc d’attraction"
+"L","AREA",31,"*"
+"L","BTL",7,"Champ de bataille"
+"L","COLF",1,"Bassin houiller"
+"L","CST",5,"Côte"
+"L","CTRB",1,"Centre d’affaire"
+"L","DEVH",13,"Cité résidentielle"
+"L","FLD",6,
+"L","GRAZ",1,
+"L","INDS",2,"Zone industrielle"
+"L","LCTY",23,"Lieu dit"
+"L","OAS",1,"Oasis"
+"L","PRK",69,"Parc"
+"L","PRT",92,"Port marchand"
+"L","RES",7,"Réserve"
+"L","RESN",8,"Parc naturel"
+"L","RESV",1,"Réserve"
+"L","RESW",2,"Réserve"
+"L","RGN",134,"Région naturelle"
+"L","RGNH",2,"Région historique"
+"L","RNGA",1,"Zone d’artillerie"
+"L","SALT",5,"Salin"
+"L","SNOW",1,
+"P","PPL",58290,"Lieu habité"
+"P","PPLA",12,
+"P","PPLA2",84,
+"P","PPLA3",231,
+"P","PPLA4",25,
+"P","PPLC",1,
+"P","PPLF",12,
+"P","PPLH",50,
+"P","PPLL",255,"Hameau"
+"P","PPLQ",10,"Ancien lieu habité"
+"P","PPLW",14,"Village détruit"
+"P","PPLX",684,"Quartier"
+"R","PRMN",3,"Promenade"
+"R","RD",2,
+"R","RDA",3,
+"R","RDJCT",2,
+"R","RJCT",1,
+"R","RR",10,
+"R","RRQ",2,
+"R","RYD",12,
+"R","ST",25,
+"R","TNL",3,
+"R","TNLRR",1,
+"R","TRL",1,
+"S","ADMF",5,
+"S","AGRF",1,
+"S","AIRB",16,"Base aérienne"
+"S","AIRF",143,"Aérodrome"
+"S","AIRH",6,"Héliport"
+"S","AIRP",294,"Aéroport / Aérodrome"
+"S","AIRQ",26,"Ancien terrain d’aviation"
+"S","AMTH",4,"Amphithéatre"
+"S","ANS",29,"Site archéologique"
+"S","ARCH",5,"Arche"
+"S","ASTR",2,"Observatoire"
+"S","ATHF",3,
+"S","BANK",1,
+"S","BCN",1,
+"S","BDG",115,"Pont"
+"S","BDGQ",1,
+"S","BLDG",30,
+"S","BLDO",4,
+"S","BP",1,
+"S","BRKW",12,"Digue"
+"S","BUSTN",7,"Gare routière"
+"S","CARN",1,
+"S","CAVE",17,"Grotte"
+"S","CH",215,"Église"
+"S","CMP",4,
+"S","CMPQ",1,
+"S","CMTY",53,"Cimetière"
+"S","COMC",1,
+"S","CSNO",5,"Casino"
+"S","CSTL",74,"Château"
+"S","CTRA",1,
+"S","CTRCM",2,
+"S","CTRF",8,"Parc exposition"
+"S","CVNT",2,"Couvent"
+"S","DAM",24,"Barrage"
+"S","DARY",1,
+"S","DIKE",10,"Digue"
+"S","EST",4,
+"S","FCL",3,
+"S","FRM",754,"Ferme"
+"S","FRMQ",4,"Ancienne ferme"
+"S","FRMS",2,"Fermes"
+"S","FT",126,"Fort"
+"S","GATE",56,"Porte"
+"S","GDN",21,"Jardin"
+"S","GHSE",5,
+"S","GOVL",1,
+"S","GRVE",1,
+"S","HERM",2,
+"S","HMSD",1,
+"S","HSE",49,
+"S","HSEC",844,"Château"
+"S","HSP",23,"Hôpital"
+"S","HSTS",362,"Site historique"
+"S","HTL",12281,"Hôtel"
+"S","HUT",33,"Refuge"
+"S","HUTS",1,
+"S","INSM",4,"Site militaire"
+"S","ITTR",1,
+"S","JTY",17,"Jetée"
+"S","LIBR",2,"Bibliothèque"
+"S","LOCK",7,"Écluse"
+"S","LTHSE",34,"Phare"
+"S","MALL",9,"Centre commercial"
+"S","MAR",9,"Marina"
+"S","MFG",4,
+"S","MKT",5,"Marché"
+"S","ML",3,"Moulin"
+"S","MLWND",1,
+"S","MNMT",29,"Monument"
+"S","MNQ",3,"Ancienne mine"
+"S","MNQR",4,"Carrière"
+"S","MOLE",2,"Môle"
+"S","MSTY",97,"Monastère"
+"S","MTRO",13,"Station de métro"
+"S","MUS",77,"Musée"
+"S","OBPT",7,"Poste d’observation"
+"S","OBS",4,"Observatoire"
+"S","OBSR",1,
+"S","OPRA",5,"Opéra"
+"S","PAL",15,"Palais"
+"S","PIER",3,
+"S","PO",9837,"Bureau de poste"
+"S","PP",2,
+"S","PPQ",1,
+"S","PS",61,"Poste électrique"
+"S","QUAY",19,"Quai"
+"S","RDCR",1,
+"S","RECG",546,"Terrain de golf"
+"S","RECR",35,"Champ de course"
+"S","REST",25,
+"S","RET",2,
+"S","RHSE",5,"Refuge"
+"S","RLG",3,"Site religieu"
+"S","RSRT",25,
+"S","RSTN",3069,"Gare ferroviaire"
+"S","RSTNQ",1,
+"S","RSTP",4,"Halte ferroviaire"
+"S","RUIN",83,"Ruines"
+"S","SCH",22,
+"S","SCHA",1,
+"S","SCHC",6,
+"S","SCHL",1,
+"S","SCHM",1,
+"S","SHRN",1,
+"S","SHSE",1,
+"S","SLCE",3,
+"S","SNTR",1,
+"S","SPA",4,
+"S","SQR",24,
+"S","STDM",19,"Stade"
+"S","STNB",14,"Base scientifique"
+"S","STNM",5,
+"S","STNR",2,
+"S","THTR",17,"Théâtre"
+"S","TMB",2,
+"S","TOWR",160,"Tour"
+"S","TRAM",2,
+"S","TRANT",2,
+"S","TRIG",1,
+"S","UNIV",31,
+"S","WALLA",1,
+"S","WTRW",1,
+"S","ZOO",3,
+"T","ATOL",1,
+"T","BAR",5,
+"T","BCH",226,"Plage"
+"T","BUTE",1,
+"T","CAPE",110,"Cap"
+"T","CLF",13,
+"T","CNYN",3,"Canyon"
+"T","CRQ",5,"Cirque"
+"T","DPR",2,
+"T","DUNE",15,"Dune"
+"T","FORD",1,
+"T","GAP",26,"Col"
+"T","GRGE",16,"Gorge"
+"T","HDLD",1,
+"T","HLL",583,"Mont"
+"T","HLLS",12,"Monts"
+"T","ISL",323,"Île"
+"T","ISLET",10,"Îlot"
+"T","ISLS",29,"Îles"
+"T","ISLT",2,
+"T","ISLX",13,"Île"
+"T","MRN",1,"Moraine"
+"T","MT",1999,"Montagne"
+"T","MTS",92,"Montagnes"
+"T","PASS",707,"Col"
+"T","PEN",13,"Péninsule"
+"T","PK",1999,"Pic"
+"T","PKS",2,"Pics"
+"T","PLAT",15,"Plateau"
+"T","PLDR",1,"Polder"
+"T","PLN",15,"Plaine"
+"T","PROM",5,"Promontoire"
+"T","PT",950,"Pointe"
+"T","RDGE",157,"Crête"
+"T","REG",2,"Reg"
+"T","RK",377,"Rocher"
+"T","RKFL",1,
+"T","RKS",216,"Rochers"
+"T","SCRP",1,
+"T","SDL",2,"Col"
+"T","SHOR",1,
+"T","SPIT",1,
+"T","SPUR",1,
+"T","TAL",1,
+"T","UPLD",27,"Plateau"
+"T","VAL",75,"Vallée"
+"U","CNYU",1,
+"U","SMU",1,
+"U","TRNU",1,
+"V","CULT",3,
+"V","FRST",2612,"Forêt"
+"V","TREE",2,
+"V","VIN",9,
