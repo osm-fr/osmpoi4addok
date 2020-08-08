@@ -11,9 +11,9 @@ SELECT
   format('%s, %s', nomdep, nomreg) as context
 FROM
   poi
-  JOIN com AS c ON
+  LEFT JOIN com AS c ON
     ST_Intersects(poi.geom, c.geom)
-  JOIN cog ON
+  LEFT JOIN cog ON
     depcom = c.insee
 ;
 
