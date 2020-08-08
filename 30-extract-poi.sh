@@ -1,5 +1,6 @@
-PBF=http://download.geofabrik.de/europe/france-latest.osm.pbf
-[ -f france-latest.osm.pbf ] || wget $PBF
+PBF_NAME=france_metro_dom_com_nc.osm.pbf
+PBF_URL=http://download.openstreetmap.fr/extracts/merge/$PBF_NAME
+wget -N $PBF_URL
 
 FILTER="`tail -n +2 def.csv | cut -d ',' -f 1,2,3 | sort | sed -e 's/"//g;s/\([-_a-z0-9]\+\),\([-_a-z0-9]\+\),\([-_a-z0-9]*\)/( \1=\2 and \3= ) or/' | tr '\n' ' ' | sed -e 's/ and =//g' | sed -e 's/ or \$//'`"
 osmconvert $PBF_NAME -o=latest.o5m
