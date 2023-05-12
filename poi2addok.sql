@@ -14,9 +14,10 @@ FROM
   LEFT JOIN com AS c ON
     ST_Intersects(poi.geom, c.geom)
   LEFT JOIN cog ON
-    depcom = c.insee
+    com = c.insee
 ;
 
+DROP INDEX IF EXISTS idx_def_tag;
 CREATE INDEX idx_def_tag ON def((key1 || '=' || value1));
 
 
